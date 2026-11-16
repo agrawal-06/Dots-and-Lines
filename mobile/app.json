@@ -1,1 +1,20 @@
-{"expo":{"name":"Dots & Lines","slug":"dots-and-lines","version":"1.0.0","orientation":"portrait","userInterfaceStyle":"light","android":{"package":"com.dotslines.game"},"ios":{"bundleIdentifier":"com.dotslines.game"}}}
+{
+  "expo": {
+    "name": "Dots & Lines",
+    "slug": "dots-and-lines",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "android": {
+      "package": "com.dotslines.game"
+    },
+    "ios": {
+      "bundleIdentifier": "com.dotslines.game"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "44ce2533-a55d-4933-b606-d1918c33d83c"
+      }
+    }
+  }
+}
