@@ -4,7 +4,7 @@ import Svg,{Circle,Line,Rect} from 'react-native-svg';
 import {io} from 'socket.io-client';
 import {makeGame,play,edgeId,scores} from './game';
 const COLORS=['#635BFF','#F59E57','#14B8A6','#F472B6'];
-const API='http://YOUR_SERVER_IP:3001';
+const API=process.env.EXPO_PUBLIC_API_URL || 'http://localhost:3001';
 const Btn=({title,onPress})=><Pressable onPress={onPress} style={s.btn}><Text style={s.btnText}>{title}</Text></Pressable>;
 export default function App(){
  const [page,setPage]=useState('home'),[game,setGame]=useState(makeGame()),[count,setCount]=useState(2),[size,setSize]=useState(4),[room,setRoom]=useState(''),[code,setCode]=useState(''),[player,setPlayer]=useState(-1),[message,setMessage]=useState('');const socket=useRef(null);
